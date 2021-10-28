@@ -96,7 +96,7 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await reply_text(mo_tech_yt, mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
                 await message.reply_photo(photo=https://telegra.ph/file/0671faf4ded8d944de89f.jpg, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
