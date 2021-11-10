@@ -56,7 +56,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"""<b>🍿 Title  : {movie_info['title']}</b>
+        mo_tech_yt = f"""<b>🎬 Title  : {search}</b>
 <b>🌟 IMDb Rating :</b> {movie_info['imdb_rating']}/10
 <b>📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 :</b> {movie_info['year']}
 <b>🎭 Genre :</b> {movie_info['genre']}
@@ -135,7 +135,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt  = f"""<b>🍿 Title  : {movie_info['title']}</b>
+        mo_tech_yt  = f"""<b>🎬 Title  : {search}</b>
 <b>🌟 IMDb Rating :</b> {movie_info['imdb_rating']}/10
 <b>📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 :</b> {movie_info['year']}
 <b>🎭 Genre :</b> {movie_info['genre']}
