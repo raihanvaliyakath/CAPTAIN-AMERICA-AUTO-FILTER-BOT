@@ -49,12 +49,18 @@ async def filter(client, message):
                 disable_web_page_preview=True
             )
             return
+    title = message.text
+    movie_info = get_movie_info(title) 
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
         return
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🎬 Title: {search}**\n**⭐ Rating: {random.choice(RATING)}**\n**🎭 Genre: {random.choice(GENRES)}**\n**👤 Requested By:** {message.from_user.mention} \n\n**©️ Powered By: {message.chat.title} 🍿**"
+        mo_tech_yt = f"""<b>🍿 Title  : {movie_info['title']}</b>
+<b>🌟 IMDb Rating :</b> {movie_info['imdb_rating']}/10
+<b>📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 :</b> {movie_info['year']}
+<b>🎭 Genre :</b> {movie_info['genre']}
+\n**©️ Powered By: {message.chat.title}🍿**"""
         files = await get_filter_results(query=search)
         if files:
             for file in files: 
@@ -130,10 +136,10 @@ async def group(client, message):
         btn = []
         search = message.text
         mo_tech_yt  = f"""<b>🍿 Title  : {movie_info['title']}</b>
-<b>🌟 IMDb Rating : {movie_info['imdb_rating']}/10</b>
-📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{movie_info['release']}</b>
-🎭 Genre : <b>{movie_info['genre']}</b>
-\n\n**©️ Powered By: {message.chat.title}🍿**"""
+<b>🌟 IMDb Rating :</b> {movie_info['imdb_rating']}/10
+<b>📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 :</b> {movie_info['year']}
+<b>🎭 Genre :</b> {movie_info['genre']}
+\n**©️ Powered By: {message.chat.title}🍿**"""
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
