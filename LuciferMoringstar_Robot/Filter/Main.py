@@ -2,6 +2,7 @@
 from Config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GROUPS, TUTORIAL
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
+from OMDB import get_movie_info
 import re
 from pyrogram.errors import UserNotParticipant
 from LuciferMoringstar_Robot import get_filter_results, get_file_details, is_subscribed, get_poster
@@ -126,7 +127,11 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🎬 Title: {search}**\n**⭐ Rating: {random.choice(RATING)}**\n**🎭 Genre: {random.choice(GENRES)}**\n\n**©️ Powered By: {message.chat.title}🍿**"
+        mo_tech_yt  = f"""<b>🍿 Title  : {movie_info['title']}</b>
+<b>🌟 IMDb Rating : {movie_info['imdb_rating']}/10</b>
+📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{movie_info['release']}</b>
+🎭 Genre : <b>{movie_info['genre']}</b>
+\n\n**©️ Powered By: {message.chat.title}🍿**"""
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
