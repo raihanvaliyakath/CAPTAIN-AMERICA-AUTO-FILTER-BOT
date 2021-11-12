@@ -146,10 +146,6 @@ async def group(client, message):
 🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10
 🗃️ Total Files : {leng}
 📑 Total Page : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}"""
-        if not nyva:
-            botusername=await client.get_me()
-            nyva=botusername.username
-            BOT["username"]=nyva
         files = await get_filter_results(query=search)
         if files:
             for file in files:
