@@ -131,8 +131,23 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🎬 Title: {search}**\n**⭐ Rating: {random.choice(RATING)}**\n**🎭 Genre: {random.choice(GENRES)}**\n\n**©️ Powered By: {message.chat.title}🍿**"
-        nyva=BOT.get("username")
+        mo_tech_yt =f"""
+↪️ Requested: {query}
+🗃️ Total Files : {leng}
+📑 Total Page : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}
+👤 Requested By : {update.from_user.mention}"""
+        
+    try:
+        imdb = await Lucifer Moringstar_Robot(query)
+        await update.message.edit_caption(
+                caption=f"""
+↪️ Requested: {query}
+🎞️ Title: <a href={imdb['url']}>{imdb.get('title')}
+🎭 Genres: {imdb.get('genres')}
+📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>
+🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10
+🗃️ Total Files : {leng}
+📑 Total Page : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}  nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
             nyva=botusername.username
