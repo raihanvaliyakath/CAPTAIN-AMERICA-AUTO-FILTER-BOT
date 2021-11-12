@@ -131,21 +131,12 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt =f"""
-↪️ Requested: {search}
-🗃️ Total Files : {leng}
-📑 Total Page : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}"""
-        
-    try:
-        await update.message.edit_caption(
-               mo_tech_yt=f"""
-↪️ Requested: {search}
-🎞️ Title: <a href={imdb['url']}>{imdb.get('title')}
-🎭 Genres: {imdb.get('genres')}
-📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>
-🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10
-🗃️ Total Files : {leng}
-📑 Total Page : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}"""
+        mo_tech_yt = f"**🎬 Title: {search}**\n**⭐ Rating: {random.choice(RATING)}**\n**🎭 Genre: {random.choice(GENRES)}**\n**📑 Total Page** : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}\n**©️ Powered By: {message.chat.title}🍿**"
+        nyva=BOT.get("username") 
+        if not nyva:
+            botusername=await client.get_me()
+            nyva=botusername.username
+            BOT["username"]=nyva
         files = await get_filter_results(query=search)
         if files:
             for file in files:
