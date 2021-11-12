@@ -134,13 +134,12 @@ async def group(client, message):
         mo_tech_yt =f"""
 ↪️ Requested: {search}
 🗃️ Total Files : {leng}
-📑 Total Page : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}
-👤 Requested By : {update.from_user.mention}"""
+📑 Total Page : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}"""
         
     try:
-        imdb = await Lucifer Moringstar_Robot(search)
+        Lucifer Moringstar_Robot(search)
         await update.message.edit_caption(
-                caption=f"""
+               mo_tech_yt=f"""
 ↪️ Requested: {search}
 🎞️ Title: <a href={imdb['url']}>{imdb.get('title')}
 🎭 Genres: {imdb.get('genres')}
