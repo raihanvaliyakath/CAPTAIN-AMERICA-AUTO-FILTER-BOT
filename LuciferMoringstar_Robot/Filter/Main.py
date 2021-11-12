@@ -137,7 +137,6 @@ async def group(client, message):
 📑 Total Page : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}"""
         
     try:
-        Lucifer Moringstar_Robot(search)
         await update.message.edit_caption(
                mo_tech_yt=f"""
 ↪️ Requested: {search}
