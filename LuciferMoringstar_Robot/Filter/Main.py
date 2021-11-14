@@ -147,9 +147,9 @@ async def group(client, message):
             LuciferMoringstar=await client.send_message(
             chat_id = message.chat.id,
             text=f"""
-                 👋Hey {message.from_user.mention} \n
-                 Check Your Spelling \n
-                 Or Admins Will Add It Soon""",
+                 👋Hey {message.from_user.mention}
+Check Your Spelling 
+<b> Or Admins Will Add It Soon </b>""",
             parse_mode="html",
             reply_markup=InlineKeyboardMarkup( 
                 [ 
