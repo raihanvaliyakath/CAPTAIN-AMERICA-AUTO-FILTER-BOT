@@ -8,6 +8,7 @@ from pyrogram.errors import UserNotParticipant
 from LuciferMoringstar_Robot import get_filter_results, get_file_details, is_subscribed, get_poster
 from LuciferMoringstar_Robot import RATING, GENRES, HELP, ABOUT
 import random
+import asyncio
 BUTTONS = {}
 BOT = {}
 
@@ -143,6 +144,23 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
         else:
+            LuciferMoringstar=await client.send_message(
+            chat_id = message.chat.id,
+            text=f"""
+                 👋Hey {message.from_user.mention} \n
+                 Check Your Spelling \n
+                 Or Admins Will Add It Soon""",
+            parse_mode="html",
+            reply_markup=InlineKeyboardMarkup( 
+                [ 
+                    [ 
+                         InlineKeyboardButton("🔍 Search Google 🔎", url='https://www.imdb.com/search/') 
+                    ] 
+                ] 
+           ) 
+        )
+            await asyncio.sleep(10) # in seconds 
+            await LuciferMoringstar.delete()
             return
         if not btn:
             return
