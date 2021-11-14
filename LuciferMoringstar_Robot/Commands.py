@@ -99,17 +99,8 @@ async def start(bot, message):
                 buttons = [
                     [
                         InlineKeyboardButton('♻️ Join Group ♻️', url='t.me/SS07MOVIEHUT')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
                     ]
-                    ]
-                await bot.send_cached_media(
-                    chat_id=message.from_user.id,
-                    file_id=file_id,
-                    caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup(buttons)
-                    )
+                 ]
         except Exception as err:
             await message.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
     elif len(message.command) > 1 and message.command[1] == 'subscribe':
