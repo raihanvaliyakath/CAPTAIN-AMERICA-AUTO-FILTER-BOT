@@ -99,9 +99,6 @@ async def start(bot, message):
                 buttons = [
                     [
                         InlineKeyboardButton('♻️ Join Group ♻️', url='t.me/SS07MOVIEHUT')
-                    ], 
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
