@@ -9,6 +9,7 @@ from pyrogram.types import Message, User
 async def welcome(bot,message):
 	chatid= message.chat.id
 	await bot.send_message(text=f"Welcome {message.from_user.mention} to {message.chat.username} ,  Happy to have here",chat_id=chatid)
+        await asyncio.sleep(10) # in seconds
 	await welcome.delete()
 @Client.on_message(filters.left_chat_member)
 async def goodbye(bot,message):
