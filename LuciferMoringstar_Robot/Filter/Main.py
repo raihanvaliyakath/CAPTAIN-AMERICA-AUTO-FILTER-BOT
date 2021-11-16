@@ -57,7 +57,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🎬 Title: {search}**\n**⭐ Rating: {random.choice(RATING)}**\n**🎭 Genre: {random.choice(GENRES)}**\n\n**©️ Powered By: {message.chat.title}🍿**"
+        mo_tech_yt = f"**🎬 Title: {search}**\n**⭐ Rating: {random.choice(RATING)}**\n**🎭 Genre: {random.choice(GENRES)}**\n\n**©️ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲**: 𝐍𝐈𝐆𝐇𝐓 𝐊𝐈𝐍𝐆"
         files = await get_filter_results(query=search)
         if files:
             for file in files: 
@@ -148,8 +148,8 @@ async def group(client, message):
             chat_id = message.chat.id,
             text=f"""
                  👋Hey {message.from_user.mention}
-Check Your Spelling 
-<b> Or Admins Will Add It Soon </b>""",
+<b>Admins Will Add It Soon </b> 
+Or Check Your Spelling """,
             parse_mode="html",
             reply_markup=InlineKeyboardMarkup( 
                 [ 
