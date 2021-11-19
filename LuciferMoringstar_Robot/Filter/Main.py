@@ -305,6 +305,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Main Channel', url='t.me/SS7MOVIEHUT'),
                     InlineKeyboardButton('New Release', url='t.me/movie_hut_channel')
                 ]
+                [   
+                    InlineKeyboardButton("🔙 Back", callback_data="start")
+                [
                 ]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
