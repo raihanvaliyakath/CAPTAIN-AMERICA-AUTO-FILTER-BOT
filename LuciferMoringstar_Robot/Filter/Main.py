@@ -158,8 +158,7 @@ So you go to google and check the spelling of the name of the movie you want... 
                          InlineKeyboardButton("🔍 Search Google 🔎", url='https://www.imdb.com/search/') 
                     ] 
                 ] 
-           ), 
-        reply_to_message_id=update.message_id
+           )
         )
             await asyncio.sleep(10) # in seconds 
             await LuciferMoringstar.delete()
