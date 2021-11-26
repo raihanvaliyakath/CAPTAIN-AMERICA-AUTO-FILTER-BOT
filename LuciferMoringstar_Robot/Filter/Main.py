@@ -150,7 +150,7 @@ async def group(client, message):
                  👋Hey {message.from_user.mention}
 This movie is not in my database you will not get that movie...(will add soon)
 Otherwise, the spelling of the name of the requested movie may not be correct...
-So you go to google and check the spelling of the name of the movie you want... """
+So you go to google and check the spelling of the name of the movie you want... """, 
             parse_mode="html",
             reply_markup=InlineKeyboardMarkup( 
                 [ 
