@@ -29,15 +29,15 @@ HELP = """
 
 <b>[➡️How To Add Old Files For database](https://youtu.be/mtu5hgW-l_o)
 
-@Mo_Tech_YT></b>
+@filmhouse016channel></b>
 """
 
 ABOUT = """
 ➥ Name : Auto Filter With IMDB
     
-➥ Credits : Subin
+➥ Credits : [RAIHAN TG] (https:github.com/raihanvaliyakath
 
-➥ Editing : [Muhammed RK](t.me/Mrk_YT)
+➥ Editing : [Muhammed RK](t.me/rv1_tg)
 
 ➥ Language : Python3
 
