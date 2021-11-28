@@ -151,14 +151,15 @@ async def group(client, message):
 This movie is not in my database you will not get that movie...(will add soon)
 Otherwise, the spelling of the name of the requested movie may not be correct...
 So you go to google and check the spelling of the name of the movie you want... """, 
-            parse_mode="html",
             reply_markup=InlineKeyboardMarkup( 
                 [ 
                     [ 
                          InlineKeyboardButton("🔍 Search Google 🔎", url='https://www.imdb.com/search/') 
                     ] 
                 ] 
-           )
+           ), 
+           parse_mode="html"
+           reply_to_message_id=message.message_id
         )
             await asyncio.sleep(10) # in seconds 
             await LuciferMoringstar.delete()
