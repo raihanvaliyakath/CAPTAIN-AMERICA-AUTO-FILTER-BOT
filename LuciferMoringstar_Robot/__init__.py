@@ -29,13 +29,13 @@ HELP = """
 
 <b>➡️YO YO I AM POWERFULL
 
-@SS07MOVIEHUT </b>
+@FC_MOVIE_TIME </b>
 """
 
 ABOUT = """
 ➥ Name : Auto Filter With IMDB
-➥ Admin : [_adx_black_hat_](t.me/the_hellcat_10)
+➥ Admin : [PROFFESSOR](t.me/RAIHAN_TG)
 ➥ Language : Python3
 ➥ Library : Pyrogram Asyncio 1.13.0
-➥ Source Code : You Can Find It Easily. A Open Source Bot
+➥ Source Code : [CLICK HERE] (t.me/ippokittumnokkininno)
 """
