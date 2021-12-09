@@ -35,9 +35,9 @@ HELP = """
 ABOUT = """
 ➥ Name : Auto Filter With IMDB
     
-➥ Credits : [RAIHAN TG] (t.me/RAIHAN_TG)
+➥ Credits : [PROFFESSOR] (t.me/RAIHAN_TG)
 
-➥ Editing : [G_X_N_E_O](t.me/G_X_N_E_O)
+➥ Editing : [ARIYOOLA](t.me/rv1_tg)
 
 ➥ Language : Python3
 
