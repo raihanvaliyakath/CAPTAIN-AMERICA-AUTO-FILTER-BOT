@@ -29,7 +29,7 @@ HELP = """
 
 
 
-@FC_MOVIE_TIME></b>
+@MoviesTalkies23></b>
 """
 
 ABOUT = """
@@ -37,11 +37,11 @@ ABOUT = """
     
 ➥ Credits : [PROFFESSOR] (t.me/RAIHAN_TG)
 
-➥ Editing : [ARIYOOLA](t.me/rv1_tg)
+➥ Editing : [ARIYOOLA](t.me/MALAYALI_DUDE)
 
 ➥ Language : Python3
 
 ➥ Library : Pyrogram Asyncio 1.13.0
 
 ➥ Source Code : [Click HERE](t.me/ippokittumnokkininno)
-"""
+➥ CHANNEL : https://t.me/mnow_updates
