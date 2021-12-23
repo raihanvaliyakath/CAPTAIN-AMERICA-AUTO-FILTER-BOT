@@ -1,4 +1,4 @@
-### [LuciferMoringstar_Robot](https://telegram.dog/LuciferMoringstar_Robot)
+
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/PR0FESS0R-99/LuciferMoringstar_Robot?style=social)
 <img src="https://img.shields.io/github/forks/PR0FESS0R-99/LuciferMoringstar_Robot?style=social"
@@ -69,7 +69,7 @@ Once a poster is fetched from OMDB , poster is saved to DB to reduce duplicate r
 
 ## Thanks to 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
-* [Original Repo](https://github.com/Mahesh0253/Media-Search-bot)
+
 * [subinps](https://github.com/subinps/Media-Search-bot)
 * [Editing Raihan](https://github.com/raihanvaliyakath)
 
