@@ -1,1 +1,1 @@
-worker: python3 MovieTalkies123.py
+worker: python3 mt_botz.py
