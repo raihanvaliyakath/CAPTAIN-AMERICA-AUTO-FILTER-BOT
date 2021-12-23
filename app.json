@@ -1,6 +1,7 @@
 {
-    "name": "LuciferMoringstar_Robot",
+    "name": "LA LISA",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "logo": "https://telegra.ph/file/0f7ec149c4b9ed57ba5ed.jpg",
     "keywords": [
       "telegram",
       "auto-filter",
